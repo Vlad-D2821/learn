@@ -1,6 +1,17 @@
+Отправка локальных изменений на удаленный репозиторий
 git status - проверка после каждого действия
 git add . - сохранить все изменения
 git status
 git commit -m "комментарий" комментируем изменения которые внесли и обязательно указываем имя бренчи
 git status
 git push origin <branch name> - отправка изменение на git
+
+Создание новой бренчи
+git status - проверяем на какой бренче мы находимся
+git checkout main - переходим на главную ветку
+git status
+git pull origin main - стягиваем все изменения из удаленного репозитория origin/main
+git status
+git checkout -b "new_branch_name" - локально создаем новую ветку с именем "new_branch_name"
+git status
+Работаем над данной задачей
