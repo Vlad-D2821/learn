@@ -1,7 +1,7 @@
 # from telebot import TeleBot
 # from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 #
-# TOKEN = "7445928622:AAHr9J9Vh6HQPT2sbaePVdPQFupW92DW9b4"
+# TOKEN =
 #
 # bot = TeleBot(TOKEN)
 #
