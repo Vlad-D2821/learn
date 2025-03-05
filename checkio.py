@@ -118,3 +118,77 @@ assert correct_sentence("Greetings, friends.") == "Greetings, friends."
 assert correct_sentence("greetings, friends.") == "Greetings, friends."
 
 print("The mission is done! Click 'Check Solution' to earn rewards!")
+
+
+
+
+def max_of_three(a: int, b: int, c: int) -> int:
+    # your code here
+    return max(a, b, c)
+
+print("Example:")
+print(max_of_three(1, 2, 3))
+
+# These "asserts" are used for self-checking
+assert max_of_three(1, 2, 3) == 3
+assert max_of_three(3, 2, 1) == 3
+assert max_of_three(1, 3, 2) == 3
+assert max_of_three(0, 0, 0) == 0
+assert max_of_three(-1, -2, -3) == -1
+assert max_of_three(5, 5, 4) == 5
+assert max_of_three(-5, -5, -6) == -5
+assert max_of_three(10, 9, 10) == 10
+assert max_of_three(123, 456, 789) == 789
+assert max_of_three(789, 123, 456) == 789
+
+print("The mission is done! Click 'Check Solution' to earn rewards!")
+
+
+def first_word(text: str) -> str:
+    # your code here
+    text = text.lstrip(" .,")
+    words = text.replace(".", " ").replace(".", " ").split()
+    return words[0].strip(".,") if words else""
+
+
+
+
+print("Example:")
+print(first_word("Hello world"))
+
+# These "asserts" are used for self-checking
+assert first_word("Hello world") == "Hello"
+assert first_word(" a word ") == "a"
+assert first_word("don't touch it") == "don't"
+assert first_word("greetings, friends") == "greetings"
+assert first_word("... and so on ...") == "and"
+assert first_word("hi") == "hi"
+
+print("The mission is done! Click 'Check Solution' to earn rewards!")
+
+
+def is_majority(items: list[bool]) -> bool:
+    # your code here
+        if sum(items) > len(items) / 2:
+            return True
+        elif sum(items) == len(items) / 2:
+            return False
+        else:
+            return False
+
+
+print("Example:")
+print(is_majority([True, True, False, True, False]))
+
+# These "asserts" are used for self-checking
+assert is_majority([True, True, False, True, False]) == True
+assert is_majority([True, True, False]) == True
+assert is_majority([True, True, False, False]) == False
+assert is_majority([True, True, False, False, False]) == False
+assert is_majority([False]) == False
+assert is_majority([True]) == True
+assert is_majority([]) == False
+
+print("The mission is done! Click 'Check Solution' to earn rewards!")
+
+
