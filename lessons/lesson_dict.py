@@ -535,26 +535,27 @@
 #
 #
 #
-# dict_ = {
-#     "fruits": ["apple", "banana",],
-#     "cars": ["bmw", "ford"],
-#     "tv": ["lg", "samsung"],
-#     "other": ["wallpaper", "fifa"],
-#     "boxes": ["23см", "45см"],
-# }
-# adress = id(dict_)
-# print(adress)
-# keys_ = list(dict_.keys())
-# print('keys_---------------', keys_)
-# first_k = keys_[0]
-# last_k = keys_[-1]
-# first_v = dict_[first_k]
-# last_v = dict_[last_k]
-# dict_[first_k] = last_v
-# dict_[last_k] = first_v
-# print('dict_---------------', dict_)
-# adress = id(dict_)
-# print(adress)
+dict_ = {
+    "fruits": ["apple", "banana",],
+    "cars": ["bmw", "ford"],
+    "tv": ["lg", "samsung"],
+    "other": ["wallpaper", "fifa"],
+    "boxes": ["23см", "45см"],
+}
+adress = id(dict_)
+print(adress)
+keys_ = list(dict_.keys())
+print(keys_)
+first_k = keys_[0]
+last_k = keys_[-1]
+first_v = dict_[first_k]
+last_v = dict_[last_k]
+print(first_v, last_v)
+dict_[first_k] = last_v
+dict_[last_k] = first_v
+adress = id(dict_)
+print(dict_)
+
 #
 #
 # dict_ = {
@@ -566,19 +567,24 @@
 # }
 # adress = id(dict_)
 # print(adress)
-# items_ = list(dict_.items())
-# print('items_---------------', items_)
-# items_[0], items_[-1] = items_[-1], items_[0]
-# print('items_---------------', items_)
-# dict_new = dict(items_)
-# print('dict_new---------------', dict_new)
+# items = list(dict_.items())
+# print(items)
+# items[0], items[-1] = items[-1], items[0]
+# print(items)
+# dict_new = dict(items)
+# print(dict_new)
 # adress = id(dict_new)
 # print(adress)
 # dict_.clear()
+# print(dict_)
 # dict_.update(dict_new)
-# print('dict_---------------', dict_)
+# print(dict_)
 # adress = id(dict_)
 # print(adress)
+
+
+
+
 #
 #
 # ist_1 = ["Украина-Киев", "Беларусь-Минск", "Япония-Токио", "Германия-Мюнхен"]
@@ -610,28 +616,20 @@
 # print('country_city_d---------------', country_city_d)
 
 # Создайте словарь, в котором ключами будут числа от 1 до 10, а значениями эти же числа, возведенные в куб.
-import json
-dictionary = {}
-for num in range(1,11):
-    dictionary[num] = num ** 3
-with open("data.json", "w") as file:
-    json.dump(dictionary, file, indent=4)
-print(dictionary)
-#
-dictionary = {num: num ** 3 for num in range(1, 11)}
-print(dictionary)
-
-
-# a = 256
-# b = 256
-# print(id(a), id(b))
-#
-# x = 257
-# y = 257
-# print(id(x), id(y))
+# import json
+# dictionary = {}
+# for num in range(1,11):
+#     dictionary[num] = num ** 3
+# with open("data.json", "w") as file:
+#     json.dump(dictionary, file, indent=4)
+# print(dictionary)
+# #
+# dictionary = {num: num ** 3 for num in range(1, 11)}
+# print(dictionary)
 
 
 # Создайте словарь из строки следующим образом: в качестве ключей возьмите буквы строки, а значениями пусть будут числа, соответствующие количеству вхождений данной буквы в строку.
-text = "hello"
-text_count = {char: text.count(char) for char in text}
-print(text_count)
+# dictionary = "Hello"
+# dictionary = {char: dictionary.count(char) for char in dictionary}
+# print(dictionary)
+
