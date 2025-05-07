@@ -269,7 +269,14 @@ def sum_numbers(text: str) -> int:
 #     n -= 2
 # print(f'Двойной факториал числа = {factorial}')
 
-import calendar
-yy = 2025
-mm = 12
-print(calendar.month(yy, mm))
+# import calendar
+# yy = 2025
+# mm = 12
+# print(calendar.month(yy, mm))
+
+x = [1,2,3,4,5]
+print(x[-1: -6: -1])
+
+a = [1,2,3,4]
+b = [x**2 for x in a if x % 2 == 0]
+print(b)
