@@ -262,9 +262,21 @@ def sum_numbers(text: str) -> int:
 # print("The mission is done! Click 'Check Solution' to earn rewards!")
 
 
-n = int(input('Введите число: '))
-factorial = 1
-while n > 1:
-    factorial *= n
-    n -= 2
-print(f'Двойной факториал числа = {factorial}')
+# n = int(input('Введите число: '))
+# factorial = 1
+# while n > 1:
+#     factorial *= n
+#     n -= 2
+# print(f'Двойной факториал числа = {factorial}')
+
+# import calendar
+# yy = 2025
+# mm = 12
+# print(calendar.month(yy, mm))
+
+x = [1,2,3,4,5]
+print(x[-1: -6: -1])
+
+a = [1,2,3,4]
+b = [x**2 for x in a if x % 2 == 0]
+print(b)
